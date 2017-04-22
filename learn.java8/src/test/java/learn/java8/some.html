@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html;" />
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<title>Chess Rating change calculator</title>
+<script src="clienthint.js"></script>
+</head>
+
+<!-- HEAD BITIS -->
+<body>
+	<div id="frame">
+
+		<div id="frame-left">
+			<!-- frame baslangic -->
+
+			<div id="frame-right">
+				<!-- frame baslangic -->
+
+				<div id="wrapper">
+					<!-- dis cerceve baslangic -->
+
+					<div id="mainpage">
+
+						<table class="mainbody" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td>
+
+									<div id="langmenu">&nbsp;</div>
+									</div> <!-- header -->
+
+									</div> <!-- top -->
+
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<!-- MIDDLE BAS -->
+
+
+									<div id="middle">
+
+										<table class="mainbody" !width="100%" border="0"
+											cellspacing="0" cellpadding="0">
+											<tr>
+												<td valign="top">
+
+													<div id="main-col">
+
+
+														<table class="contentpaneopen">
+															<tr>
+																<td class="contentheading" width="100%">
+																	Calculators: Ratings Change Calculator</td>
+
+																<td align="right" width="100%" class="buttonheading">
+																</td>
+
+															</tr>
+														</table>
+
+														<table class="contentpaneopen">
+
+															<tr>
+																<td valign="top" colspan="2" class="createdate"></td>
+															</tr>
+
+
+															<tr>
+																<td valign="top" colspan="2" height=800>
+
+																	<div id=result name=result></div> <br> <br>
+
+																	<table width=300 border=0 bgcolor=#efefef cellpadding=2
+																		cellspacing=2 align=center>
+																		<form action=calc_rtd.php method=post id="frmMain"
+																			name="frmMain">
+																			<tr>
+																				<td bgcolor=#FFFFFF>Rating</td>
+																				<td bgcolor=#FFFFFF><input type=text name=f_ro
+																					id=f_ro size=10 maxlength=4 class="inputbox">
+																				</td>
+																			</tr>
+																			<tr>
+																				<td bgcolor=#FFFFFF>Rc</td>
+																				<td bgcolor=#FFFFFF><input type=text name=f_rc
+																					id=f_rc size=10 maxlength=4 class="inputbox">
+																				</td>
+																			</tr>
+																			<tr>
+																				<TD bgcolor=#FFFFFF>W</TD>
+																				<td bgcolor=#FFFFFF><SELECT name=f_w id=f_w
+																					size=1 class="inputbox">
+																						<OPTION value=0 CHECKED>0</OPTION>
+																						<OPTION value=0.5>0.5</OPTION>
+																						<OPTION value=1>1</OPTION>
+																				</SELECT></td>
+																			</tr>
+																			<tr>
+																				<td bgcolor=#FFFFFF>K <sub>val</sub></td>
+																				<td bgcolor=#FFFFFF><SELECT name=f_k id=f_k
+																					size=1 class="inputbox">
+																						<OPTION value=40 CHECKED>40</OPTION>
+																						<OPTION value=30>30</OPTION>
+																						<OPTION value=20>20</OPTION>
+																						<OPTION value=15>15</OPTION>
+																						<OPTION value=10>10</OPTION>
+																				</SELECT>
+																			</tr>
+																			</td>
+
+																			<tr>
+																				<td colspan=2 align=center bgcolor=#FFFFFF><input
+																					type=button size=50 value=Calculate
+																					OnClick="showHint(document.getElementById('f_ro').value, document.getElementById('f_rc').value,document.getElementById('f_w').value, document.getElementById('f_k').value)"></td>
+																			</tr>
+
+																		</form>
+																	</table>
+
+																	<blockquote>
+																		Help notes:<br> <b>Rating</b> - Rating of a
+																		player. <br> <b>Rc</b> - Opponent rating. <br>
+																		<b>W</b> - Score. <br> <b>K <sub>val</sub></b> -
+																		K is the development coefficient. <br>K is the
+																		development coefficient. <br>K = 40 for a player
+																		new to the rating list until he has completed events
+																		with at least 30 games <br>K = 20 as long as a
+																		player's rating remains under 2400. <br>K = 10
+																		once a player's published rating has reached 2400 and
+																		remains at that level subsequently, even if the rating
+																		drops below 2400. <br>K = 40 for all players
+																		until their 18th birthday, as long as their rating
+																		remains under 2300. <br> <br>K = 20 for
+																		RAPID and BLITZ ratings all players.
+																</td>
+															</tr>
+
+														</table>
+													</div> <!-- main page-->
+													</div> <!-- dis cerceve bitis -->
+													</div> <!-- frame -right bitis -->
+													</div> <!-- frame -bottom bitis -->
+
+													</div> <!-- frame bitis -->
+</body>
+<script>
+	var xmlHttp;
+	function showHint(f_ro, f_rc, f_w, f_k) {
+
+		//if (f_ro.length==0)
+		//{
+		//	document.getElementById("result").innerHTML="No Ro";
+		//return;
+		//}
+		xmlHttp = GetXmlHttpObject();
+		if (xmlHttp == null) {
+			alert("Browser does not support HTTP Request");
+			return;
+		}
+		var url = "calc_rtd.php";
+		url = url + "?f_ro=" + f_ro;
+		url = url + "&f_rc=" + f_rc;
+		url = url + "&f_w=" + f_w;
+		url = url + "&f_k=" + f_k;
+		url = url + "&sid=" + Math.random();
+		xmlHttp.onreadystatechange = stateChanged;
+		xmlHttp.open("GET", url, true);
+		xmlHttp.send(null);
+	}
+
+	function stateChanged() {
+		if (xmlHttp.readyState == 4 || xmlHttp.readyState == "complete") {
+			document.getElementById("result").innerHTML = xmlHttp.responseText;
+			//document.getElementById(objHint).value=xmlHttp.responseText;
+			//var x=xmlHttp.responseText;
+			//retval=alert(x.substring(0,x.indexOf("/",0))+"."+x.substring(x.indexOf("/",0)+1,x.lastIndexOf("/")-1)+"."+x.substring(x.lastIndexOf("/")+1));
+			//document.getElementById(x.substring(0,x.indexOf("/",0))).innerHTML=x.substring(x.lastIndexOf("/")+1);
+			//document.getElementById("fideid"+x.substring(4,x.indexOf("/",0))).value=x.substring(x.indexOf("/",0)+1,x.lastIndexOf("/"));
+			//document.getElementById("hintid"+x.substring(4,x.indexOf("/",0))).innerHTML=x.substring(x.indexOf("/",0)+1,x.lastIndexOf("/"));
+			//retval=alert(x.substring(x.indexOf("/",0)+1,x.lastIndexOf("/")));
+		}
+	}
+	function GetXmlHttpObject() {
+		var xmlHttp = null;
+		try {
+			// Firefox, Opera 8.0+, Safari
+			xmlHttp = new XMLHttpRequest();
+		} catch (e) {
+			// Internet Explorer
+			try {
+				xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+			} catch (e) {
+				xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+		}
+		return xmlHttp;
+	}
+	function LTrim(str) {
+		var whitespace = new String(" \t\n\r");
+
+		var s = new String(str);
+
+		if (whitespace.indexOf(s.charAt(0)) != -1) {
+			var j = 0, i = s.length;
+			while (j < i && whitespace.indexOf(s.charAt(j)) != -1)
+				j++;
+			s = s.substring(j, i);
+		}
+
+		return s;
+	}
+</script>
+</html>

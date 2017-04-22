@@ -1,0 +1,87 @@
+Round 1 Results
+1.Kumar Gaurav 1/2-1/2 Ramcharan
+2.Saurav Roop 0-1 Vipal Subhashi
+3.Sanjiv Kumar 0-1 Saurabh Anand
+4.Vimlesh Kr Singh 1-0 Md Ataullah Khan
+5.Shubham 0-1 Bhoopnath
+6.Sudhir Kr Sinha 1/2-1/2 Rahul Kumar
+
+Round 2 Results
+1.Ramcharan 1-0 Rahul Kumar
+2. Bhoopnath 0-1 Sudhir Kr Sinha
+3. Md Ataullah Khan 1-0 Shubham
+4. Saurabh Anand 1-0 Vimlesh Kr Singh
+5.Vipal Subhashi 1-0 Sanjiv Kumar 
+6.Kumar Gaurav 1-0 Saurav Roop
+
+Round 3 Results
+1.Saurav Roop 1-0 Ramcharan
+2. Sanjiv Kumar 0-1 Kumar Gaurav
+3. Vimlesh Kr Singh 0-1 Vipal Subhashi
+4. Shubham 0-1 Saurabh Anand
+5. Sudhir Kr Sinha 1-0 Md Ataullah Khan
+6. Rahul Kumar 0-1 Bhoopnath
+
+Round 4 Results
+1. Ramcharan 1-0 Bhoopnath
+2.Md Ataullah Khan 1/2-1/2 Rahul Kumar
+3. Saurabh Anand 1/2-1/2 Sudhir Kr Sinha
+4. Vipal Subhashi 1-0 Shubham
+5. Kumar Gaurav 1-0 Vimlesh Kr Singh
+6. Saurav Roop 1-0 Sanjiv Kumar
+
+Round 5 Results
+1. Sanjiv Kumar 0-1 Ramcharan
+2. Vimlesh Kr Singh 0-1 Saurav Roop
+3. Shubham 0-1 Kumar Gaurav
+4. Sudhir Kr Sinha 1/2-1/2 Vipal Subhashi
+5. Rahul Kumar 1-0 Saurabh Anand
+6. Bhoopnath 1-0 Md Ataullah Khan
+
+Round 6 Results
+1. Ramcharan 1-0 Md Ataullah Khan
+2. Saurabh Anand 1-0 Bhoopnath
+3. Vipal Subhashi 1/2-1/2 Rahul Kumar
+4. Kumar Gaurav 1-0 Sudhir Kr Sinha
+5. Saurav Roop 1-0 Shubham
+6. Sanjiv Kumar 1-0 Vimlesh Kr Singh 
+
+Round 7 Results
+1. Vimlesh Kr Singh 1-0 Ramcharan 
+2. Shubham 0-1 Sanjiv Kumar
+3. Sudhir Kr Sinha 1/2-1/2 Saurav Roop
+4. Rahul Kumar 1/2-1/2 Kumar Gaurav
+5. Bhoopnath 0-1 Vipal Subhashi
+6. Md Ataullah Khan 0-1 Saurabh Anand
+
+Round 8 Results
+1.Ramcharan 0-1 Saurabh Anand
+2.Vipal Subhashi 1-0 Md Ataullah Khan
+3.Kumar Gaurav 1-0 Bhoopnath
+4. Saurav Roop 1/2-1/2 Rahul Kumar
+5.Sanjiv Kumar 0-1 Sudhir Kr Sinha
+6.Vimlesh Kr Singh 1-0 Shubham
+
+Round 9 Results
+1. Shubham 0-1 Ramcharan
+2. Sudhir Kr Sinha 1-0 Vimlesh Kr Singh
+3. Rahul Kumar 1-0 Sanjiv Kumar
+4. Bhoopnath 0-1 Saurav Roop
+5. Md Ataullah Khan 1-0 Kumar Gaurav
+6. Saurabh Anand 1-0 Vipal Subhashi
+
+Round 10 Results
+1.Ramcharan 0-1 Vipal Subhashi
+2.Kumar Gaurav 1/2-1/2 Saurabh Anand
+3.Saurav Roop 1-0 Md Ataullah Khan
+4.Sanjiv Kumar 0-1 Bhoopnath
+5.Vimlesh Kr Singh 0-1 Rahul Kumar
+6.Shubham 0-1 Sudhir Kr Sinha
+
+Round 11 Results
+1. Sudhir Kr Sinha 1-0 Ramcharan
+2. Rahul Kumar 1-0 Shubham
+3. Bhoopnath 1-0 Vimlesh Kr Singh
+4. Md Ataullah Khan 0-1 Sanjiv Kumar
+5. Saurabh Anand 1-0 Saurav Roop
+6. Vipal Subhashi 1-0 Kumar Gaurav

@@ -1,0 +1,21 @@
+------------------
+System Information
+------------------
+Time of this report: 5/14/2016, 19:27:43
+       Machine name: PRAVEEN-PC
+   Operating System: Windows 7 Home Premium 64-bit (6.1, Build 7601) Service Pack 1 (7601.win7sp1_gdr.160211-0600)
+           Language: English (Regional Setting: English)
+System Manufacturer: Dell Inc.
+       System Model: Inspiron N5110
+               BIOS: BIOS Date: 03/16/11 17:26:31 Ver: 04.06.04
+          Processor: Intel(R) Core(TM) i3-2310M CPU @ 2.10GHz (4 CPUs), ~2.1GHz
+             Memory: 6144MB RAM
+Available OS Memory: 6052MB RAM
+          Page File: 5401MB used, 6699MB available
+        Windows Dir: C:\Windows
+    DirectX Version: DirectX 11
+DX Setup Parameters: Not found
+   User DPI Setting: Using System DPI
+ System DPI Setting: 96 DPI (100 percent)
+    DWM DPI Scaling: Disabled
+     DxDiag Version: 6.01.7601.17514 32bit Unicode
